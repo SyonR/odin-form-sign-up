@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "norsebold";
+  src:
+    url("fonts/norsebold.woff2") format("woff2"),
+    url("fonts/norsebold.woff") format("woff");
+}
+
+body {
+    margin: 0;
+}
+
+div#parent {
+    display: flex;
+}
+
+/* Left Column */
+div#left-child {
+    box-sizing: border-box;
+    justify-content: center;
+    display: flex;
+    max-width: 45%;
+    position: relative;
+}
+
+img#unsplash {
+    max-width: 100%;
+    height: 100vh;
+}
+
+div#odin-banner {
+    box-sizing: border-box;
+    display: flex;
+    position: absolute;
+    top: 16%;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+img#odin {
+    width: 80px;
+    height: auto;
+}
+
+h1#odin-text {
+    font-family: "norsebold", Arial, Helvetica, sans-serif;
+    font-size: 6rem;
+    color: white;
+    margin: 0;
+}
+
+p#credit {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+a {
+    color: white;
+}
+
+/* Right Column */
+div#right-child {
+    box-sizing: border-box;
+    max-width: 100%;
+    background-color: #f9fafb;
+}
+
+div#right-child > * {
+    padding-left: 3rem;
+}
+
+div#container-one, div#container-two p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+div#container-one {
+    padding-top: 15vh;
+}
+
+div#container-two {
+    background-color: white;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form > div {
+    width: 240px;
+    height: 120px;
+}
+
+p#form-title {
+    padding-top: 2rem;
+}
+
+label {
+    font-family: sans-serif, Arial, Helvetica;
+    letter-spacing: 0.2ch;
+    font-weight: bold;
+    color: #49515c;
+    font-size: 12px;
+}
+
+input {
+    border-radius: 5px;
+    border-width: 0.1px;
+}
+
+
