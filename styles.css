@@ -18,7 +18,7 @@ div#parent {
     display: flex;
     justify-content: center;
     background-color: black;
-    max-width: 67vw;
+    width: clamp(400px, 67%, 100vw);
 }
 
 /* Left Column */
@@ -30,8 +30,9 @@ div#left-child {
     position: relative;
 }
 
+/* TODO: Clamp this image*/
 img#unsplash {
-    max-width: 100%;
+    width: clamp(300px, 100%, 50vw);
     height: 100vh;
 }
 
@@ -63,7 +64,7 @@ h1#odin-text {
 
 p#credit {
     position: absolute;
-    bottom: 0;
+    bottom: 0%;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
@@ -76,7 +77,7 @@ a {
 /* Right Column */
 div#right-child {
     box-sizing: border-box;
-    width: 60%;
+    width: clamp(300px, 100%, 50vw);
     background-color: #f9fafb;
 }
 
@@ -85,15 +86,12 @@ div#right-child > * {
     padding-right: 3rem;
 }
 
-div#container-one, div#container-two p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
 div#container-one {
     padding-top: 15vh;
     margin-bottom: 3rem; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 div#container-two {
@@ -110,6 +108,9 @@ form {
 }
 
 p#form-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
     padding-top: 1.5rem;
 }
 
@@ -134,7 +135,7 @@ label {
 input {
     box-sizing: border-box;
     border-radius: 5px;
-    border: 0.25px solid #d9dadb;
+    border: 0.25px solid #E5E7EB;
     background-color: #fffefe;
     padding: 8px;
     width: 235px;
@@ -168,4 +169,30 @@ div#container-three p {
 
 div#container-three p b {
     color: #49515c;
+}
+
+/* Responsive Design */ 
+
+input:hover:not(:focus) {
+    background-color: #f7f7f7;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #1D4ED8;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);
+}
+
+input[required]:invalid:not(:focus) {
+    border: 1px solid #B91C1C;
+}
+
+button#form-submit:hover:not(:focus) {
+    background-color: #3d4a31;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #1D4ED8;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);
 }
