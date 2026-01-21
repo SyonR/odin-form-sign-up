@@ -43,15 +43,15 @@
                     </div>
                     <div>
                         <label for="phone-number">PHONE NUMBER</label>
-                        <input type="text" pattern="[0-9]{9}" id="phone-number" name="phone-number"> 
+                        <input type="text" pattern="^[0-9]{3}-\[0-9]{3}-\[0-9]{4}$" id="phone-number" name="phone-number"> 
                     </div>
                     <div>
                         <label for="password">PASSWORD *</label>
                         <input class="password" minlength="4" type="password" id="password" name="password" required>
                     </div>
                     <div>
-                        <label for="confirm_password">CONFIRM PASSWORD *</label>
-                        <input class="password" type="password" id="confirm_password" name="confirm_password" required>
+                        <label for="confirm-password">CONFIRM PASSWORD *</label>
+                        <input class="password" type="password" id="confirm-password" name="confirm-password" required>
                     </div>
                 </form>
             </div>
@@ -61,5 +61,7 @@
             </div>
         </div>
     </div>
+
+    
 </body>
 </html>
